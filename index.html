@@ -1,739 +1,872 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>김태민 (GoodPineApple) - Developer Portfolio 🍍</title>
-    <meta name="description" content="CTO, PM, Full-stack Developer - 개발, 강의, 사업개발 전문가 김태민(GoodPineApple)의 포트폴리오">
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
-    <!-- Navigation -->
+    <meta
+      name="description"
+      content="CTO, PM, Full-stack Developer - 개발, 강의, 사업개발 전문가 김태민(GoodPineApple)의 포트폴리오"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <script
+      type="text/javascript"
+      src="//t1.daumcdn.net/kas/static/ba.min.js"
+      async
+    ></script>
     <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <span>GoodPineApple</span>
-            </div>
-            <div class="nav-menu" id="nav-menu">
-                <a href="#home" class="nav-link">Home</a>
-                <a href="#about" class="nav-link">About</a>
-                <a href="#experience" class="nav-link">Experience</a>
-                <a href="#skills" class="nav-link">Skills</a>
-                <a href="#projects" class="nav-link">Projects</a>
-                <a href="#education" class="nav-link">Education</a>
-                <a href="#teaching" class="nav-link">Teaching</a>
-                <a href="#contact" class="nav-link">Contact</a>
-            </div>
-            <div class="nav-toggle" id="nav-toggle">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
+      <div class="nav-container">
+        <div class="nav-logo">
+          <span>GoodPineApple</span>
         </div>
+        <div class="nav-menu" id="nav-menu">
+          <a href="#home" class="nav-link">Home</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#experience" class="nav-link">Experience</a>
+          <a href="#skills" class="nav-link">Skills</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#education" class="nav-link">Education</a>
+          <a href="#teaching" class="nav-link">Teaching</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </div>
+        <div class="nav-toggle" id="nav-toggle">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
     </nav>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <h1 class="hero-title">
-                        <span class="title-line">안녕하세요! 🍍</span>
-                        <span class="title-line">저는 <span class="highlight">김태민</span>입니다</span>
-                    </h1>
-                    <h2 class="hero-subtitle">CTO • PM • Full-stack Developer • 좋은 파인애플 🌟</h2>
-                    <p class="hero-description">
-                        개발과 강의, 사업 개발을 아우르는 다재다능한 기술 리더입니다.<br>
-                        AI부터 웹/앱 개발까지, 기술을 통해 달콤한 가치를 창출하는 것을 추구합니다! 🚀
-                    </p>
-                    <div class="hero-buttons">
-                        <a href="#contact" class="btn btn-primary">
-                            <i class="fas fa-envelope"></i>
-                            연락하기
-                        </a>
-                        <a href="#projects" class="btn btn-secondary">
-                            <i class="fas fa-rocket"></i>
-                            프로젝트 보기
-                        </a>
-                    </div>
-                </div>
-                <div class="hero-image">
-                    <div class="avatar-container">
-                        <div class="avatar">
-                        </div>
-                        <div class="floating-icons">
-                            <div class="icon-item" data-skill="JavaScript"><i class="fab fa-js-square"></i></div>
-                            <div class="icon-item" data-skill="Python"><i class="fab fa-python"></i></div>
-                            <div class="icon-item" data-skill="React"><i class="fab fa-react"></i></div>
-                            <div class="icon-item" data-skill="Node.js"><i class="fab fa-node-js"></i></div>
-                            <div class="icon-item" data-skill="Docker"><i class="fab fa-docker"></i></div>
-                            <div class="icon-item" data-skill="AWS"><i class="fab fa-aws"></i></div>
-                        </div>
-                    </div>
-                </div>
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1 class="hero-title">
+              <span class="title-line">안녕하세요! 🍍</span>
+              <span class="title-line"
+                >저는 <span class="highlight">김태민</span>입니다</span
+              >
+            </h1>
+            <h2 class="hero-subtitle">
+              CTO • PM • Full-stack Developer • 좋은 파인애플 🌟
+            </h2>
+            <p class="hero-description">
+              개발과 강의, 사업 개발을 아우르는 다재다능한 기술 리더입니다.<br />
+              AI부터 웹/앱 개발까지, 기술을 통해 달콤한 가치를 창출하는 것을
+              추구합니다! 🚀
+            </p>
+            <div class="hero-buttons">
+              <a href="#contact" class="btn btn-primary">
+                <i class="fas fa-envelope"></i>
+                연락하기
+              </a>
+              <a href="#projects" class="btn btn-secondary">
+                <i class="fas fa-rocket"></i>
+                프로젝트 보기
+              </a>
             </div>
-            <div class="scroll-indicator">
-                <div class="scroll-down"></div>
+          </div>
+          <div class="hero-image">
+            <div class="avatar-container">
+              <div class="avatar"></div>
+              <div class="floating-icons">
+                <div class="icon-item" data-skill="JavaScript">
+                  <i class="fab fa-js-square"></i>
+                </div>
+                <div class="icon-item" data-skill="Python">
+                  <i class="fab fa-python"></i>
+                </div>
+                <div class="icon-item" data-skill="React">
+                  <i class="fab fa-react"></i>
+                </div>
+                <div class="icon-item" data-skill="Node.js">
+                  <i class="fab fa-node-js"></i>
+                </div>
+                <div class="icon-item" data-skill="Docker">
+                  <i class="fab fa-docker"></i>
+                </div>
+                <div class="icon-item" data-skill="AWS">
+                  <i class="fab fa-aws"></i>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
+        <div class="scroll-indicator">
+          <div class="scroll-down"></div>
+        </div>
+      </div>
     </section>
-
-    <!-- About Section -->
     <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">About Me 🍍</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <h3>다양한 영역에서 활동하는 기술 전문가 ✨</h3>
-                    <p>
-                        저는 <strong>개발</strong>, <strong>강의</strong>, <strong>사업 개발</strong> 등 다양한 영역에서 활동하는 기술 전문가입니다. 
-                        CTO와 PM으로서의 경험을 바탕으로 기술적 전문성과 리더십을 결합하여 혁신적인 솔루션을 만들어냅니다.
-                    </p>
-                    <p>
-                        특히 AI, 빅데이터, 웹/앱 개발 분야에서 다수의 정부과제와 스타트업 프로젝트를 성공적으로 수행했으며, 
-                        교육자로서도 활동하여 지식을 나누는 것에 큰 가치를 두고 있습니다. 파인애플처럼 겉은 까칠해 보여도 속은 달콤한 개발자입니다! 😊
-                    </p>
-                    <div class="about-highlights">
-                        <div class="highlight-item">
-                            <i class="fas fa-code"></i>
-                            <div>
-                                <h4>8+ Years</h4>
-                                <p>개발 경험 🚀</p>
-                            </div>
-                        </div>
-                        <div class="highlight-item">
-                            <i class="fas fa-users"></i>
-                            <div>
-                                <h4>3 Companies</h4>
-                                <p>CTO/PM 경력 💼</p>
-                            </div>
-                        </div>
-                        <div class="highlight-item">
-                            <i class="fas fa-chalkboard-teacher"></i>
-                            <div>
-                                <h4>Multiple</h4>
-                                <p>강의 경력 📚</p>
-                            </div>
-                        </div>
-                        <div class="highlight-item">
-                            <i class="fas fa-award"></i>
-                            <div>
-                                <h4>5+ Certs</h4>
-                                <p>전문 자격증 🏆</p>
-                            </div>
-                        </div>
-                    </div>
+      <div class="container">
+        <h2 class="section-title">About Me 🍍</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <h3>다양한 영역에서 활동하는 기술 전문가 ✨</h3>
+            <p>
+              저는 <strong>개발</strong>, <strong>강의</strong>,
+              <strong>사업 개발</strong> 등 다양한 영역에서 활동하는 기술
+              전문가입니다. CTO와 PM으로서의 경험을 바탕으로 기술적 전문성과
+              리더십을 결합하여 혁신적인 솔루션을 만들어냅니다.
+            </p>
+            <p>
+              특히 AI, 빅데이터, 웹/앱 개발 분야에서 다수의 정부과제와 스타트업
+              프로젝트를 성공적으로 수행했으며, 교육자로서도 활동하여 지식을
+              나누는 것에 큰 가치를 두고 있습니다. 파인애플처럼 겉은 까칠해
+              보여도 속은 달콤한 개발자입니다! 😊
+            </p>
+            <div class="about-highlights">
+              <div class="highlight-item">
+                <i class="fas fa-code"></i>
+                <div>
+                  <h4>8+ Years</h4>
+                  <p>개발 경험 🚀</p>
                 </div>
-                <div class="about-info">
-                    <div class="info-card">
-                        <h4>기본 정보 📋</h4>
-                        <ul>
-                            <li><i class="fas fa-user"></i> <strong>이름:</strong> 김태민 (Kim Taemin)</li>
-                            <li><i class="fas fa-birthday-cake"></i> <strong>생년월일:</strong> 1993.01.21</li>
-                            <li><i class="fas fa-briefcase"></i> <strong>현재 직책:</strong> CTO (구스피크)</li>
-                            <li><i class="fas fa-map-marker-alt"></i> <strong>위치:</strong> 대한민국 🇰🇷</li>
-                        </ul>
-                    </div>
-                    <div class="info-card">
-                        <h4>전문 분야 🎯</h4>
-                        <div class="specialties">
-                            <span class="specialty-tag">🌐 Web/App Development</span>
-                            <span class="specialty-tag">🤖 AI & Machine Learning</span>
-                            <span class="specialty-tag">📊 BigData Analytics</span>
-                            <span class="specialty-tag">📈 Project Management</span>
-                            <span class="specialty-tag">👥 Technical Leadership</span>
-                            <span class="specialty-tag">📖 Education & Training</span>
-                        </div>
-                    </div>
+              </div>
+              <div class="highlight-item">
+                <i class="fas fa-users"></i>
+                <div>
+                  <h4>3 Companies</h4>
+                  <p>CTO/PM 경력 💼</p>
                 </div>
+              </div>
+              <div class="highlight-item">
+                <i class="fas fa-chalkboard-teacher"></i>
+                <div>
+                  <h4>Multiple</h4>
+                  <p>강의 경력 📚</p>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <i class="fas fa-award"></i>
+                <div>
+                  <h4>5+ Certs</h4>
+                  <p>전문 자격증 🏆</p>
+                </div>
+              </div>
             </div>
+          </div>
+          <div class="about-info">
+            <div class="info-card">
+              <h4>기본 정보 📋</h4>
+              <ul>
+                <li>
+                  <i class="fas fa-user"></i> <strong>이름:</strong> 김태민 (Kim
+                  Taemin)
+                </li>
+                <li>
+                  <i class="fas fa-birthday-cake"></i>
+                  <strong>생년월일:</strong> 1993.01.21
+                </li>
+                <li>
+                  <i class="fas fa-briefcase"></i>
+                  <strong>현재 직책:</strong> CTO (구스피크)
+                </li>
+                <li>
+                  <i class="fas fa-map-marker-alt"></i>
+                  <strong>위치:</strong> 대한민국 🇰🇷
+                </li>
+              </ul>
+            </div>
+            <div class="info-card">
+              <h4>전문 분야 🎯</h4>
+              <div class="specialties">
+                <span class="specialty-tag">🌐 Web/App Development</span>
+                <span class="specialty-tag">🤖 AI & Machine Learning</span>
+                <span class="specialty-tag">📊 BigData Analytics</span>
+                <span class="specialty-tag">📈 Project Management</span>
+                <span class="specialty-tag">👥 Technical Leadership</span>
+                <span class="specialty-tag">📖 Education & Training</span>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
+    <ins
+      class="kakao_ad_area"
+      style="display: none"
+      data-ad-unit="DAN-LUxjvhAtZwJEvxlj"
+      data-ad-width="728"
+      data-ad-height="90"
+    ></ins>
+    <script
+      type="text/javascript"
+      src="//t1.daumcdn.net/kas/static/ba.min.js"
+      async
+    ></script>
     <!-- Experience Section -->
     <section id="experience" class="experience">
-        <div class="container">
-            <h2 class="section-title">Experience</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-period">2024.01 - 현재</div>
-                        <h3>구스피크</h3>
-                        <h4>CTO • 기술개발팀</h4>
-                        <p>다양한 프로젝트의 기술 총괄 및 개발 리더십 담당</p>
-                        <ul>
-                            <li>바스캣랩스 코인거래 플랫폼 서비스 개발 (NextJS, Flutter)</li>
-                            <li>학점은행제 비용 계산 예측 사이트 기획 및 제작 (NextJS)</li>
-                            <li>BookWhale 사회적협동조합 커뮤니티 사이트 제작</li>
-                            <li>AI 웹 스크래핑 패션시장 트렌드 예측 R&D사업 기술 지원</li>
-                            <li>학점은행제 플랫폼 EzDegree 기획 및 제작 (NextJS)</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-period">2019.12 - 2023.12</div>
-                        <h3>(주)샤샵</h3>
-                        <h4>팀장 → CTO • 기술개발팀</h4>
-                        <p>글로벌 커머스 플랫폼 개발 및 다양한 AI 프로젝트 총괄</p>
-                        <ul>
-                            <li>샤샵 글로벌 상품거래 플랫폼 기획/개발 (IONIC, NodeJS)</li>
-                            <li>감정일기 PA:DO 하이브리드 앱 개발 (React Native)</li>
-                            <li>2021 대스타 해결사플랫폼 입상 (1억원) 및 전략형 R&D</li>
-                            <li>카테고리를 통한 배송비 예측 AI 모델 개발 (Tensorflow, Python)</li>
-                            <li>해외배송 프로세스 기획/개발</li>
-                            <li>샤샵 B2B 플랫폼 프로토타입 기획/개발</li>
-                            <li>SALT 국제학교 홈페이지 제작 (ExpressJS, NodeJS)</li>
-                            <li>HAVATA 헬스아바타 카카오톡 API 연계</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-period">2017.08 - 2019.11</div>
-                        <h3>(주)비타소프트</h3>
-                        <h4>사원 → 대리 • A&B사업부 (AI&BigData)</h4>
-                        <p>정부과제 및 공공기관 프로젝트 개발 담당</p>
-                        <ul>
-                            <li>한국산업단지공단 기업성장지원센터 업무관리시스템 고도화 (Spring, Oracle)</li>
-                            <li>서울특별시 저공해자동차 관리시스템 성능개선 및 유지보수</li>
-                            <li>한국관광공사 관광벤처 홈페이지 유지보수 (Spring, MySQL)</li>
-                            <li>한국농수산식품유통공사 국제식품박람회 운영관리시스템 구축</li>
-                            <li>대전시청 과학적 정책지원을 위한 빅데이터 분석 (R, Docker)</li>
-                            <li>블록체인협회 JOBSDAC 웹 ERP 개발 (Node, MySQL)</li>
-                            <li>특허청 AI기반 유사상표 점검 시스템 구축 (Python, Docker)</li>
-                        </ul>
-                    </div>
-                </div>
+      <div class="container">
+        <h2 class="section-title">Experience</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-period">2024.01 - 현재</div>
+              <h3>구스피크</h3>
+              <h4>CTO • 기술개발팀</h4>
+              <p>다양한 프로젝트의 기술 총괄 및 개발 리더십 담당</p>
+              <ul>
+                <li>
+                  바스캣랩스 코인거래 플랫폼 서비스 개발 (NextJS, Flutter)
+                </li>
+                <li>학점은행제 비용 계산 예측 사이트 기획 및 제작 (NextJS)</li>
+                <li>BookWhale 사회적협동조합 커뮤니티 사이트 제작</li>
+                <li>AI 웹 스크래핑 패션시장 트렌드 예측 R&D사업 기술 지원</li>
+                <li>학점은행제 플랫폼 EzDegree 기획 및 제작 (NextJS)</li>
+              </ul>
             </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-period">2019.12 - 2023.12</div>
+              <h3>(주)샤샵</h3>
+              <h4>팀장 → CTO • 기술개발팀</h4>
+              <p>글로벌 커머스 플랫폼 개발 및 다양한 AI 프로젝트 총괄</p>
+              <ul>
+                <li>샤샵 글로벌 상품거래 플랫폼 기획/개발 (IONIC, NodeJS)</li>
+                <li>감정일기 PA:DO 하이브리드 앱 개발 (React Native)</li>
+                <li>2021 대스타 해결사플랫폼 입상 (1억원) 및 전략형 R&D</li>
+                <li>
+                  카테고리를 통한 배송비 예측 AI 모델 개발 (Tensorflow, Python)
+                </li>
+                <li>해외배송 프로세스 기획/개발</li>
+                <li>샤샵 B2B 플랫폼 프로토타입 기획/개발</li>
+                <li>SALT 국제학교 홈페이지 제작 (ExpressJS, NodeJS)</li>
+                <li>HAVATA 헬스아바타 카카오톡 API 연계</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-period">2017.08 - 2019.11</div>
+              <h3>(주)비타소프트</h3>
+              <h4>사원 → 대리 • A&B사업부 (AI&BigData)</h4>
+              <p>정부과제 및 공공기관 프로젝트 개발 담당</p>
+              <ul>
+                <li>
+                  한국산업단지공단 기업성장지원센터 업무관리시스템 고도화
+                  (Spring, Oracle)
+                </li>
+                <li>서울특별시 저공해자동차 관리시스템 성능개선 및 유지보수</li>
+                <li>한국관광공사 관광벤처 홈페이지 유지보수 (Spring, MySQL)</li>
+                <li>
+                  한국농수산식품유통공사 국제식품박람회 운영관리시스템 구축
+                </li>
+                <li>
+                  대전시청 과학적 정책지원을 위한 빅데이터 분석 (R, Docker)
+                </li>
+                <li>블록체인협회 JOBSDAC 웹 ERP 개발 (Node, MySQL)</li>
+                <li>
+                  특허청 AI기반 유사상표 점검 시스템 구축 (Python, Docker)
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Skills Section -->
     <section id="skills" class="skills">
-        <div class="container">
-            <h2 class="section-title">Skills & Technologies 🛠️</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3><i class="fas fa-code"></i> Programming Languages</h3>
-                    <div class="skill-list">
-                        <div class="skill-item">
-                            <span class="skill-name">JavaScript/TypeScript 🟨</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="95%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Python 🐍</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="90%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Java ☕</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="85%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">R 📊</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="75%"></div>
-                            </div>
-                        </div>
-                    </div>
+      <div class="container">
+        <h2 class="section-title">Skills & Technologies 🛠️</h2>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3><i class="fas fa-code"></i> Programming Languages</h3>
+            <div class="skill-list">
+              <div class="skill-item">
+                <span class="skill-name">JavaScript/TypeScript 🟨</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="95%"></div>
                 </div>
-
-                <div class="skill-category">
-                    <h3><i class="fas fa-laptop-code"></i> Frontend & Mobile</h3>
-                    <div class="skill-list">
-                        <div class="skill-item">
-                            <span class="skill-name">React/NextJS</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="95%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">React Native</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="85%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Flutter</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="80%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Ionic</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="90%"></div>
-                            </div>
-                        </div>
-                    </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Python 🐍</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="90%"></div>
                 </div>
-
-                <div class="skill-category">
-                    <h3><i class="fas fa-server"></i> Backend & Database</h3>
-                    <div class="skill-list">
-                        <div class="skill-item">
-                            <span class="skill-name">Spring Boot</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="90%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Node.js/Express</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="95%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Flask</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="85%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Oracle/MySQL</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="85%"></div>
-                            </div>
-                        </div>
-                    </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Java ☕</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="85%"></div>
                 </div>
-
-                <div class="skill-category">
-                    <h3><i class="fas fa-brain"></i> AI & Data Science</h3>
-                    <div class="skill-list">
-                        <div class="skill-item">
-                            <span class="skill-name">TensorFlow</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="85%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Machine Learning</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="80%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Data Analysis</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="85%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">CNN/Deep Learning</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="75%"></div>
-                            </div>
-                        </div>
-                    </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">R 📊</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="75%"></div>
                 </div>
-
-                <div class="skill-category">
-                    <h3><i class="fas fa-cloud"></i> DevOps & Cloud</h3>
-                    <div class="skill-list">
-                        <div class="skill-item">
-                            <span class="skill-name">Docker</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="85%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Google Cloud Platform</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="80%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">AWS</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="75%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">CI/CD</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="70%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3><i class="fas fa-users-cog"></i> Management & Soft Skills</h3>
-                    <div class="skill-list">
-                        <div class="skill-item">
-                            <span class="skill-name">Project Management</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="95%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Team Leadership</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="90%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Business Development</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="85%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Technical Training</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="90%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
+          </div>
+
+          <div class="skill-category">
+            <h3><i class="fas fa-laptop-code"></i> Frontend & Mobile</h3>
+            <div class="skill-list">
+              <div class="skill-item">
+                <span class="skill-name">React/NextJS</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="95%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">React Native</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="85%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Flutter</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="80%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Ionic</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="90%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3><i class="fas fa-server"></i> Backend & Database</h3>
+            <div class="skill-list">
+              <div class="skill-item">
+                <span class="skill-name">Spring Boot</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="90%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Node.js/Express</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="95%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Flask</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="85%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Oracle/MySQL</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="85%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3><i class="fas fa-brain"></i> AI & Data Science</h3>
+            <div class="skill-list">
+              <div class="skill-item">
+                <span class="skill-name">TensorFlow</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="85%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Machine Learning</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="80%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Data Analysis</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="85%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">CNN/Deep Learning</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="75%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3><i class="fas fa-cloud"></i> DevOps & Cloud</h3>
+            <div class="skill-list">
+              <div class="skill-item">
+                <span class="skill-name">Docker</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="85%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Google Cloud Platform</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="80%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">AWS</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="75%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">CI/CD</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="70%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3><i class="fas fa-users-cog"></i> Management & Soft Skills</h3>
+            <div class="skill-list">
+              <div class="skill-item">
+                <span class="skill-name">Project Management</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="95%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Team Leadership</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="90%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Business Development</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="85%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Technical Training</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="90%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Projects Section -->
     <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">Featured Projects 🚀</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-icon">
-                        <i class="fas fa-shopping-cart"></i>
-                    </div>
-                    <h3>샤샵 글로벌 커머스 플랫폼 🛒</h3>
-                    <p>글로벌 상품거래를 위한 종합 커머스 플랫폼. AI 기반 배송비 예측 모델 및 해외배송 프로세스 포함.</p>
-                    <div class="project-tech">
-                        <span>IONIC</span>
-                        <span>NodeJS</span>
-                        <span>TensorFlow</span>
-                        <span>Python</span>
-                    </div>
-                    <div class="project-highlight">🏆 창업진흥원 대스타 해결사플랫폼 입상 (1억원)</div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-icon">
-                        <i class="fas fa-brain"></i>
-                    </div>
-                    <h3>AI 기반 유사상표 점검 시스템 🤖</h3>
-                    <p>특허청 의뢰로 개발한 AI 기반 상표 유사성 검증 시스템. 딥러닝 모델을 활용한 자동화 솔루션.</p>
-                    <div class="project-tech">
-                        <span>Python</span>
-                        <span>Docker</span>
-                        <span>Machine Learning</span>
-                        <span>CNN</span>
-                    </div>
-                    <div class="project-highlight">🏢 특허청 공식 프로젝트</div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-icon">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <h3>빅데이터 정책지원 시스템 📊</h3>
-                    <p>대전시청의 과학적 정책지원을 위한 빅데이터 분석 플랫폼. R과 Docker를 활용한 분석 환경 구축.</p>
-                    <div class="project-tech">
-                        <span>R</span>
-                        <span>Docker</span>
-                        <span>BigData</span>
-                        <span>Analytics</span>
-                    </div>
-                    <div class="project-highlight">🏛️ 대전시청 정책 프로젝트</div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-icon">
-                        <i class="fas fa-mobile-alt"></i>
-                    </div>
-                    <h3>감정일기 PA:DO 앱 📱</h3>
-                    <p>사용자의 감정을 기록하고 분석하는 하이브리드 모바일 애플리케이션. 직관적인 UX/UI 설계.</p>
-                    <div class="project-tech">
-                        <span>React Native</span>
-                        <span>Mobile</span>
-                        <span>UX/UI</span>
-                    </div>
-                    <div class="project-highlight">📱 크로스플랫폼 앱</div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-icon">
-                        <i class="fas fa-graduation-cap"></i>
-                    </div>
-                    <h3>학점은행제 플랫폼 EzDegree 🎓</h3>
-                    <p>학점은행제 비용 계산 및 예측을 위한 종합 플랫폼. 사용자 친화적인 계산 시스템 구현.</p>
-                    <div class="project-tech">
-                        <span>NextJS</span>
-                        <span>React</span>
-                        <span>Education</span>
-                    </div>
-                    <div class="project-highlight">🎓 교육 플랫폼</div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-icon">
-                        <i class="fas fa-coins"></i>
-                    </div>
-                    <h3>바스캣랩스 코인거래 플랫폼 💰</h3>
-                    <p>안전하고 효율적인 암호화폐 거래를 위한 플랫폼. 실시간 거래 시스템 및 보안 강화.</p>
-                    <div class="project-tech">
-                        <span>NextJS</span>
-                        <span>Flutter</span>
-                        <span>Blockchain</span>
-                    </div>
-                    <div class="project-highlight">💰 핀테크 프로젝트</div>
-                </div>
+      <div class="container">
+        <h2 class="section-title">Featured Projects 🚀</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-icon">
+              <i class="fas fa-shopping-cart"></i>
             </div>
+            <h3>샤샵 글로벌 커머스 플랫폼 🛒</h3>
+            <p>
+              글로벌 상품거래를 위한 종합 커머스 플랫폼. AI 기반 배송비 예측
+              모델 및 해외배송 프로세스 포함.
+            </p>
+            <div class="project-tech">
+              <span>IONIC</span>
+              <span>NodeJS</span>
+              <span>TensorFlow</span>
+              <span>Python</span>
+            </div>
+            <div class="project-highlight">
+              🏆 창업진흥원 대스타 해결사플랫폼 입상 (1억원)
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-icon">
+              <i class="fas fa-brain"></i>
+            </div>
+            <h3>AI 기반 유사상표 점검 시스템 🤖</h3>
+            <p>
+              특허청 의뢰로 개발한 AI 기반 상표 유사성 검증 시스템. 딥러닝
+              모델을 활용한 자동화 솔루션.
+            </p>
+            <div class="project-tech">
+              <span>Python</span>
+              <span>Docker</span>
+              <span>Machine Learning</span>
+              <span>CNN</span>
+            </div>
+            <div class="project-highlight">🏢 특허청 공식 프로젝트</div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-icon">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <h3>빅데이터 정책지원 시스템 📊</h3>
+            <p>
+              대전시청의 과학적 정책지원을 위한 빅데이터 분석 플랫폼. R과
+              Docker를 활용한 분석 환경 구축.
+            </p>
+            <div class="project-tech">
+              <span>R</span>
+              <span>Docker</span>
+              <span>BigData</span>
+              <span>Analytics</span>
+            </div>
+            <div class="project-highlight">🏛️ 대전시청 정책 프로젝트</div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-icon">
+              <i class="fas fa-mobile-alt"></i>
+            </div>
+            <h3>감정일기 PA:DO 앱 📱</h3>
+            <p>
+              사용자의 감정을 기록하고 분석하는 하이브리드 모바일 애플리케이션.
+              직관적인 UX/UI 설계.
+            </p>
+            <div class="project-tech">
+              <span>React Native</span>
+              <span>Mobile</span>
+              <span>UX/UI</span>
+            </div>
+            <div class="project-highlight">📱 크로스플랫폼 앱</div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <h3>학점은행제 플랫폼 EzDegree 🎓</h3>
+            <p>
+              학점은행제 비용 계산 및 예측을 위한 종합 플랫폼. 사용자 친화적인
+              계산 시스템 구현.
+            </p>
+            <div class="project-tech">
+              <span>NextJS</span>
+              <span>React</span>
+              <span>Education</span>
+            </div>
+            <div class="project-highlight">🎓 교육 플랫폼</div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-icon">
+              <i class="fas fa-coins"></i>
+            </div>
+            <h3>바스캣랩스 코인거래 플랫폼 💰</h3>
+            <p>
+              안전하고 효율적인 암호화폐 거래를 위한 플랫폼. 실시간 거래 시스템
+              및 보안 강화.
+            </p>
+            <div class="project-tech">
+              <span>NextJS</span>
+              <span>Flutter</span>
+              <span>Blockchain</span>
+            </div>
+            <div class="project-highlight">💰 핀테크 프로젝트</div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Education Section -->
     <section id="education" class="education">
-        <div class="container">
-            <h2 class="section-title">Education & Certifications</h2>
-            <div class="education-content">
-                <div class="education-section">
-                    <h3><i class="fas fa-university"></i> 학력</h3>
-                    <div class="education-item">
-                        <div class="education-info">
-                            <h4>성공회대학교</h4>
-                            <p class="degree">사회복지학과 학사</p>
-                            <p class="period">2011.03 - 2015.02</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="education-section">
-                    <h3><i class="fas fa-certificate"></i> 자격증</h3>
-                    <div class="certifications-grid">
-                        <div class="cert-item">
-                            <div class="cert-icon">
-                                <i class="fas fa-code"></i>
-                            </div>
-                            <h4>정보처리기사</h4>
-                            <p>2018.11</p>
-                        </div>
-                        <div class="cert-item">
-                            <div class="cert-icon">
-                                <i class="fab fa-google"></i>
-                            </div>
-                            <h4>Google Cloud Certified Professional Data Engineer</h4>
-                            <p>2019.06</p>
-                        </div>
-                        <div class="cert-item">
-                            <div class="cert-icon">
-                                <i class="fas fa-child"></i>
-                            </div>
-                            <h4>아동코딩지도사</h4>
-                            <p>2023.12</p>
-                        </div>
-                        <div class="cert-item">
-                            <div class="cert-icon">
-                                <i class="fas fa-chalkboard-teacher"></i>
-                            </div>
-                            <h4>고용노동부 NCS 확인강사</h4>
-                            <p>2025.06</p>
-                        </div>
-                        <div class="cert-item">
-                            <div class="cert-icon">
-                                <i class="fas fa-shield-alt"></i>
-                            </div>
-                            <h4>개인정보 처리자 기본과정</h4>
-                            <p>2025.06</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="education-section">
-                    <h3><i class="fas fa-laptop"></i> 교육 이수</h3>
-                    <div class="training-list">
-                        <div class="training-item">
-                            <h4>패스트캠퍼스 업스테이지 연계 커널아카데미 AI부트캠프 13기</h4>
-                            <p>2025.03 - 2025.06 (예정)</p>
-                        </div>
-                        <div class="training-item">
-                            <h4>멀티캠퍼스 Java기반 모바일 & 웹 개발자 양성과정</h4>
-                            <p>Spring, Android | 2016.08 - 2017.02</p>
-                        </div>
-                        <div class="training-item">
-                            <h4>스타트업캠퍼스 시그니처코스 2기 Digital Innovation Lab</h4>
-                            <p>2017.02 - 2017.06</p>
-                        </div>
-                        <div class="training-item">
-                            <h4>성균관대학교 청년창업드림캠프</h4>
-                            <p>Global상 수상 | 2017.07</p>
-                        </div>
-                        <div class="training-item">
-                            <h4>RESTful 웹 서비스기반 API 보안 플랫폼 개발 교육</h4>
-                            <p>2017.10 - 2017.11</p>
-                        </div>
-                        <div class="training-item">
-                            <h4>HRDI 능력개발교육원 훈련교·강사 직업윤리 기초교육</h4>
-                            <p>2025.06</p>
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+        <h2 class="section-title">Education & Certifications</h2>
+        <div class="education-content">
+          <div class="education-section">
+            <h3><i class="fas fa-university"></i> 학력</h3>
+            <div class="education-item">
+              <div class="education-info">
+                <h4>성공회대학교</h4>
+                <p class="degree">사회복지학과 학사</p>
+                <p class="period">2011.03 - 2015.02</p>
+              </div>
             </div>
+          </div>
+
+          <div class="education-section">
+            <h3><i class="fas fa-certificate"></i> 자격증</h3>
+            <div class="certifications-grid">
+              <div class="cert-item">
+                <div class="cert-icon">
+                  <i class="fas fa-code"></i>
+                </div>
+                <h4>정보처리기사</h4>
+                <p>2018.11</p>
+              </div>
+              <div class="cert-item">
+                <div class="cert-icon">
+                  <i class="fab fa-google"></i>
+                </div>
+                <h4>Google Cloud Certified Professional Data Engineer</h4>
+                <p>2019.06</p>
+              </div>
+              <div class="cert-item">
+                <div class="cert-icon">
+                  <i class="fas fa-child"></i>
+                </div>
+                <h4>아동코딩지도사</h4>
+                <p>2023.12</p>
+              </div>
+              <div class="cert-item">
+                <div class="cert-icon">
+                  <i class="fas fa-chalkboard-teacher"></i>
+                </div>
+                <h4>고용노동부 NCS 확인강사</h4>
+                <p>2025.06</p>
+              </div>
+              <div class="cert-item">
+                <div class="cert-icon">
+                  <i class="fas fa-shield-alt"></i>
+                </div>
+                <h4>개인정보 처리자 기본과정</h4>
+                <p>2025.06</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="education-section">
+            <h3><i class="fas fa-laptop"></i> 교육 이수</h3>
+            <div class="training-list">
+              <div class="training-item">
+                <h4>
+                  패스트캠퍼스 업스테이지 연계 커널아카데미 AI부트캠프 13기
+                </h4>
+                <p>2025.03 - 2025.06 (예정)</p>
+              </div>
+              <div class="training-item">
+                <h4>멀티캠퍼스 Java기반 모바일 & 웹 개발자 양성과정</h4>
+                <p>Spring, Android | 2016.08 - 2017.02</p>
+              </div>
+              <div class="training-item">
+                <h4>스타트업캠퍼스 시그니처코스 2기 Digital Innovation Lab</h4>
+                <p>2017.02 - 2017.06</p>
+              </div>
+              <div class="training-item">
+                <h4>성균관대학교 청년창업드림캠프</h4>
+                <p>Global상 수상 | 2017.07</p>
+              </div>
+              <div class="training-item">
+                <h4>RESTful 웹 서비스기반 API 보안 플랫폼 개발 교육</h4>
+                <p>2017.10 - 2017.11</p>
+              </div>
+              <div class="training-item">
+                <h4>HRDI 능력개발교육원 훈련교·강사 직업윤리 기초교육</h4>
+                <p>2025.06</p>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Teaching Section -->
     <section id="teaching" class="teaching">
-        <div class="container">
-            <h2 class="section-title">Teaching Experience 👨‍🏫</h2>
-            <p class="section-subtitle">지식을 나누고 다음 세대의 개발자들을 양성하는 교육자로서의 활동 🌱</p>
-            <div class="teaching-grid">
-                <div class="teaching-item">
-                    <div class="teaching-icon">
-                        <i class="fas fa-school"></i>
-                    </div>
-                    <h3>홍익대학교사범대학부속초등학교 🏫</h3>
-                    <p class="teaching-role">정규과정 외부강사</p>
-                    <p class="teaching-period">2024.01 - 2024.02</p>
-                    <p class="teaching-description">초등학생 대상 코딩교육 정규과정 강의</p>
-                </div>
-
-                <div class="teaching-item">
-                    <div class="teaching-icon">
-                        <i class="fas fa-tooth"></i>
-                    </div>
-                    <h3>대구테크노파크 🦷</h3>
-                    <p class="teaching-role">전문 강사</p>
-                    <p class="teaching-period">2024.11.09</p>
-                    <p class="teaching-description">3D Teeth Scan 데이터분석 및 데이터라벨링 직무교육</p>
-                </div>
-
-                <div class="teaching-item">
-                    <div class="teaching-icon">
-                        <i class="fas fa-laptop-code"></i>
-                    </div>
-                    <h3>넥스트러스 oz코딩스쿨 💻</h3>
-                    <p class="teaching-role">프로젝트 세션 강사</p>
-                    <p class="teaching-period">2024.12.02</p>
-                    <p class="teaching-description">웹풀스택 프로젝트 세션 강의</p>
-                </div>
-
-                <div class="teaching-item">
-                    <div class="teaching-icon">
-                        <i class="fas fa-video"></i>
-                    </div>
-                    <h3>패스트캠퍼스 제로베이스 🎥</h3>
-                    <p class="teaching-role">강의 제작자</p>
-                    <p class="teaching-period">2025.03 - 2025.03</p>
-                    <p class="teaching-description">컴퓨터사이언스 비대면 강의 제작</p>
-                </div>
+      <div class="container">
+        <h2 class="section-title">Teaching Experience 👨‍🏫</h2>
+        <p class="section-subtitle">
+          지식을 나누고 다음 세대의 개발자들을 양성하는 교육자로서의 활동 🌱
+        </p>
+        <div class="teaching-grid">
+          <div class="teaching-item">
+            <div class="teaching-icon">
+              <i class="fas fa-school"></i>
             </div>
-            
-            <div class="teaching-highlight">
-                <div class="highlight-content">
-                    <h3>교육 철학 🍍✨</h3>
-                    <p>
-                        "기술은 나누어야 더 큰 가치를 가진다"는 신념으로 다양한 교육 활동을 진행하고 있습니다. 
-                        초등학생부터 전문 개발자까지, 각 수준에 맞는 맞춤형 교육을 통해 
-                        실무에서 바로 활용 가능한 지식과 경험을 전달하고자 합니다. 달콤한 파인애플처럼 지식도 달콤하게! 🌟
-                    </p>
-                </div>
+            <h3>홍익대학교사범대학부속초등학교 🏫</h3>
+            <p class="teaching-role">정규과정 외부강사</p>
+            <p class="teaching-period">2024.01 - 2024.02</p>
+            <p class="teaching-description">
+              초등학생 대상 코딩교육 정규과정 강의
+            </p>
+          </div>
+
+          <div class="teaching-item">
+            <div class="teaching-icon">
+              <i class="fas fa-tooth"></i>
             </div>
+            <h3>대구테크노파크 🦷</h3>
+            <p class="teaching-role">전문 강사</p>
+            <p class="teaching-period">2024.11.09</p>
+            <p class="teaching-description">
+              3D Teeth Scan 데이터분석 및 데이터라벨링 직무교육
+            </p>
+          </div>
+
+          <div class="teaching-item">
+            <div class="teaching-icon">
+              <i class="fas fa-laptop-code"></i>
+            </div>
+            <h3>넥스트러스 oz코딩스쿨 💻</h3>
+            <p class="teaching-role">프로젝트 세션 강사</p>
+            <p class="teaching-period">2024.12.02</p>
+            <p class="teaching-description">웹풀스택 프로젝트 세션 강의</p>
+          </div>
+
+          <div class="teaching-item">
+            <div class="teaching-icon">
+              <i class="fas fa-video"></i>
+            </div>
+            <h3>패스트캠퍼스 제로베이스 🎥</h3>
+            <p class="teaching-role">강의 제작자</p>
+            <p class="teaching-period">2025.03 - 2025.03</p>
+            <p class="teaching-description">컴퓨터사이언스 비대면 강의 제작</p>
+          </div>
         </div>
+
+        <div class="teaching-highlight">
+          <div class="highlight-content">
+            <h3>교육 철학 🍍✨</h3>
+            <p>
+              "기술은 나누어야 더 큰 가치를 가진다"는 신념으로 다양한 교육
+              활동을 진행하고 있습니다. 초등학생부터 전문 개발자까지, 각 수준에
+              맞는 맞춤형 교육을 통해 실무에서 바로 활용 가능한 지식과 경험을
+              전달하고자 합니다. 달콤한 파인애플처럼 지식도 달콤하게! 🌟
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Contact Me 📞</h2>
-            <p class="section-subtitle">새로운 프로젝트나 협업 기회에 대해 언제든 연락주세요! 🤝✨</p>
-            
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h3>Email 📧</h3>
-                            <p>forest0121@gmail.com</p>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-phone"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h3>Phone 📱</h3>
-                            <p>010-8331-9717</p>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h3>Location 🌏</h3>
-                            <p>대한민국</p>
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+        <h2 class="section-title">Contact Me 📞</h2>
+        <p class="section-subtitle">
+          새로운 프로젝트나 협업 기회에 대해 언제든 연락주세요! 🤝✨
+        </p>
 
-                <div class="contact-form">
-                    <form id="contact-form">
-                        <div class="form-group">
-                            <input type="text" id="name" name="name" placeholder="이름 ✨" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" id="email" name="email" placeholder="이메일 📧" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" id="subject" name="subject" placeholder="제목 📝" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea id="message" name="message" placeholder="메시지 💌" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">
-                            <i class="fas fa-paper-plane"></i>
-                            메시지 보내기
-                        </button>
-                    </form>
-                </div>
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="contact-details">
+                <h3>Email 📧</h3>
+                <p>forest0121@gmail.com</p>
+              </div>
             </div>
-            
-            <div class="social-links">
-                <a href="mailto:forest0121@gmail.com" class="social-link">
-                    <i class="fas fa-envelope"></i>
-                </a>
-                <a href="https://github.com/GoodPineApple" target="_blank" class="social-link">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="https://linkedin.com/in/taemin-kim" target="_blank" class="social-link">
-                    <i class="fab fa-linkedin"></i>
-                </a>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="contact-details">
+                <h3>Phone 📱</h3>
+                <p>010-8331-9717</p>
+              </div>
             </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="contact-details">
+                <h3>Location 🌏</h3>
+                <p>대한민국</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form">
+            <form id="contact-form">
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="이름 ✨"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="이메일 📧"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  placeholder="제목 📝"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="메시지 💌"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">
+                <i class="fas fa-paper-plane"></i>
+                메시지 보내기
+              </button>
+            </form>
+          </div>
         </div>
+
+        <div class="social-links">
+          <a href="mailto:forest0121@gmail.com" class="social-link">
+            <i class="fas fa-envelope"></i>
+          </a>
+          <a
+            href="https://github.com/GoodPineApple"
+            target="_blank"
+            class="social-link"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+          <a
+            href="https://linkedin.com/in/taemin-kim"
+            target="_blank"
+            class="social-link"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <p>&copy; 2025 김태민 (GoodPineApple) 🍍. All rights reserved.</p>
-                <p>개발, 강의, 사업개발을 통해 기술로 세상을 변화시키는 달콤한 개발자 ✨</p>
-            </div>
+      <div class="container">
+        <div class="footer-content">
+          <p>&copy; 2025 김태민 (GoodPineApple) 🍍. All rights reserved.</p>
+          <p>
+            개발, 강의, 사업개발을 통해 기술로 세상을 변화시키는 달콤한 개발자
+            ✨
+          </p>
         </div>
+      </div>
     </footer>
 
     <script src="scripts/main.js"></script>
-</body>
-</html> 
+  </body>
+</html>
