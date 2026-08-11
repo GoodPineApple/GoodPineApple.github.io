@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>이력서 - 김태민</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  /* 모든 페이지에 동일하게 적용되는 문서 여백 (상하 20mm · 좌우 20mm) */
+  @page { size: A4; margin: 20mm; }
+  body {
+    font-family: "Apple SD Gothic Neo", "Pretendard", "Noto Sans KR", sans-serif;
+    color: #1c1d21;
+    font-size: 9.8pt;
+    line-height: 1.62;
+    letter-spacing: -0.01em;
+    margin: 0;
+  }
+
+  /* ---- header ---- */
+  .header { display: flex; justify-content: space-between; align-items: flex-start; }
+  .header-main { padding-top: 2mm; }
+  .name { font-size: 23pt; font-weight: 800; letter-spacing: -0.03em; }
+  .name small { font-size: 10pt; font-weight: 500; color: #8a8f99; margin-left: 8px; letter-spacing: 0; }
+  .position { font-size: 11pt; font-weight: 700; margin-top: 2mm; }
+  .contact { margin-top: 4mm; font-size: 8.5pt; color: #6f7480; line-height: 1.8; }
+  .contact b { color: #1c1d21; font-weight: 600; }
+  .photo { width: 27mm; height: 36mm; object-fit: cover; border-radius: 2mm; }
+
+  .intro {
+    margin-top: 7mm; padding-top: 5mm; border-top: 1.2pt solid #1c1d21;
+    font-size: 10pt; line-height: 1.7;
+  }
+  .intro p { margin-bottom: 2mm; }
+  .intro .lede { font-weight: 700; font-size: 10.5pt; }
+  .intro .rest { color: #4c4f57; }
+
+  /* ---- sections ---- */
+  .sec { margin-top: 8mm; }
+  .sec-label {
+    font-size: 8pt; font-weight: 800; letter-spacing: 0.18em; color: #8a8f99;
+    text-transform: uppercase; padding-bottom: 1.5mm; border-bottom: 0.6pt solid #d9d8d3;
+    margin-bottom: 4mm;
+  }
+
+  /* ---- career ---- */
+  .job { margin-bottom: 6mm; break-inside: avoid; }
+  .job-head { display: flex; justify-content: space-between; align-items: baseline; }
+  .job-head h3 { font-size: 11.5pt; font-weight: 800; letter-spacing: -0.02em; }
+  .job-head h3 span { font-size: 9pt; font-weight: 600; color: #6f7480; margin-left: 6px; }
+  .job-period { font-size: 8.5pt; font-weight: 600; color: #8a8f99; }
+  .job-summary { font-size: 9pt; color: #6f7480; margin: 0.5mm 0 2mm; }
+  .job ul { list-style: none; }
+  .job li { position: relative; padding-left: 4mm; margin-bottom: 1.2mm; color: #33353b; }
+  .job li::before { content: ""; position: absolute; left: 0; top: 2.6mm; width: 1.6mm; height: 0.5pt; background: #1c1d21; }
+  .job li b { font-weight: 700; color: #1c1d21; }
+  .tech { color: #8a8f99; font-size: 8.5pt; }
+
+  /* ---- rows (자격/교육 등) ---- */
+  .row { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 1.6mm; }
+  .row .r-main { color: #33353b; }
+  .row .r-main b { font-weight: 700; color: #1c1d21; }
+  .row .r-sub { font-size: 8.5pt; color: #8a8f99; white-space: nowrap; margin-left: 6mm; }
+
+  /* ---- skills ---- */
+  .skill-row { display: flex; margin-bottom: 1.4mm; }
+  .skill-row span { width: 26mm; flex-shrink: 0; font-size: 8.5pt; font-weight: 700; color: #8a8f99; padding-top: 0.4mm; }
+  .skill-row p { color: #33353b; }
+
+  .cols { display: flex; gap: 10mm; }
+  .cols > div { flex: 1; }
+
+  .keep { break-inside: avoid; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-main">
+    <div class="name">김태민 <small>Kim Taemin</small></div>
+    <div class="position">서비스의 처음부터 끝까지, 직접 만들고 운영하는 개발자</div>
+    <div class="contact">
+      <b>010-8331-9717</b> · forest0121@gmail.com<br>
+      github.com/GoodPineApple · goosepeak.kr
+    </div>
+  </div>
+  <img class="photo" src="../../assets/portrait.jpg" alt="">
+</div>
+
+<div class="intro">
+  <p class="lede">기획 → 개발 → 운영 → 사업화의 전 과정을 수행해 온 9년 차 풀스택 개발자입니다.</p>
+  <p class="rest">
+    공공 SI에서 백엔드와 데이터 분석으로 기본기를 다졌고, 스타트업 CTO로 글로벌 커머스 플랫폼을 4년간 만들고 운영했습니다.<br>
+    지금은 구스피크 CTO로 EzDegree를, 에고라이팅 CTO로 모두의 자서전·모두출판을 개발·운영하고 있습니다.<br>
+    Claude·Codex를 활용한 AI 네이티브 개발 방식으로, 기업에 필요한 서비스를 빠르게 만드는 데 집중합니다.<br>
+    2021 대스타 해결사 플랫폼 입상(상금 1억 원), Google Cloud Professional Data Engineer 보유.
+  </p>
+</div>
+
+<div class="sec">
+  <div class="sec-label">Experience</div>
+
+  <div class="job">
+    <div class="job-head">
+      <h3>에고라이팅 <span>CTO · 서울</span></h3>
+      <div class="job-period">2025.01 — 현재</div>
+    </div>
+    <p class="job-summary">AI 대필·출판 서비스 기업. 기술 전반과 두 솔루션의 개발·운영 총괄.</p>
+    <ul>
+      <li><b>솔루션 1 — AI 대필 + 출판 원스톱 서비스 '모두의 자서전' 개발/운영</b> — AI 목차 생성·원고 집필부터 인쇄·배송까지 원스톱 파이프라인 구축 <span class="tech">bookbyai.com</span></li>
+      <li><b>솔루션 2 — 최초의 다이렉트 출판 플랫폼 '모두출판' 개발/운영</b> — 원고 붙여넣기만으로 표지·내지 조판이 완성되는 출판 자동화, 서점 유통·인세 정산 플로우 구현 <span class="tech">modupub.com</span></li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-head">
+      <h3>구스피크 <span>CTO · 기술개발팀</span></h3>
+      <div class="job-period">2024.01 — 현재</div>
+    </div>
+    <p class="job-summary">IT 비즈니스 파트너. 자체 서비스와 외부 프로젝트의 기획·개발 총괄.</p>
+    <ul>
+      <li><b>학점은행제 플랫폼 EzDegree 기획/개발</b> — 학점계산기 MVP로 수요 검증 후 커뮤니티·AI 학습설계 매칭 플랫폼으로 확장, 현재 운영 중 <span class="tech">Next.js</span></li>
+      <li>바스캣랩스 코인거래 플랫폼 개발(2024.01–04) <span class="tech">Next.js · Flutter</span> / AI 패션 트렌드 예측 R&amp;D 기술 고문(2024.01–09) <span class="tech">CNN/DL</span></li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-head">
+      <h3>(주)샤샵 <span>팀장 → CTO · 기술개발팀</span></h3>
+      <div class="job-period">2019.12 — 2023.12</div>
+    </div>
+    <p class="job-summary">글로벌 상품거래 플랫폼 스타트업. 기술 조직과 프로덕트 전반 리드.</p>
+    <ul>
+      <li><b>글로벌 상품거래 플랫폼</b>을 초기 설계부터 4년간 기획/개발/운영·고도화 (PM 겸 개발 리드) <span class="tech">Ionic · Node.js</span></li>
+      <li><b>2021 대스타 해결사 플랫폼 입상(상금 1억 원)</b>, 전략형 R&amp;D 수행 (창업진흥원) <span class="tech">Python · TensorFlow</span></li>
+      <li><b>카테고리 기반 배송비 예측 AI 모델</b> 개발 및 실서비스 적용 (2022.01–06)</li>
+      <li>해외배송 프로세스·B2B 프로토타입 개발, 감정일기 앱 PA:DO 개발(이노브로젝트) <span class="tech">React Native</span></li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-head">
+      <h3>(주)비타소프트 <span>사원 → 대리 · A&amp;B사업부 (AI &amp; BigData)</span></h3>
+      <div class="job-period">2017.08 — 2019.11</div>
+    </div>
+    <p class="job-summary">공공·기업 SI 백엔드 개발 및 데이터 분석.</p>
+    <ul>
+      <li><b>특허청 AI 기반 유사상표 점검 시스템</b> 구축 (2019.07–11) <span class="tech">Python · Docker</span></li>
+      <li><b>대전시청 과학적 정책지원 빅데이터 분석</b> (2018.12–2019.03) <span class="tech">R · Docker</span></li>
+      <li>한국산업단지공단·한국농수산식품유통공사·서울시 등 공공 시스템 개발/유지보수 <span class="tech">Spring · Oracle</span></li>
+    </ul>
+  </div>
+</div>
+
+<div class="sec keep">
+  <div class="sec-label">Skills</div>
+  <div class="skill-row"><span>언어</span><p>Java · JavaScript · TypeScript · Python</p></div>
+  <div class="skill-row"><span>백엔드</span><p>Spring Boot · Node.js (Express) · Flask</p></div>
+  <div class="skill-row"><span>프론트·앱</span><p>Next.js · React · Ionic · React Native · Flutter</p></div>
+  <div class="skill-row"><span>AI·데이터</span><p>TensorFlow · CNN/DL · R · 데이터 분석·라벨링 · Claude·Codex 기반 AI 네이티브 개발</p></div>
+  <div class="skill-row"><span>인프라</span><p>GCP · Docker · Oracle · MySQL · Google Analytics</p></div>
+</div>
+
+<div class="cols sec keep">
+  <div>
+    <div class="sec-label">Awards &amp; Certificates</div>
+    <div class="row"><span class="r-main"><b>대스타 해결사 플랫폼 입상</b> — 창업진흥원, 상금 1억 원</span><span class="r-sub">2021</span></div>
+    <div class="row"><span class="r-main"><b>GCP Professional Data Engineer</b></span><span class="r-sub">2019.06</span></div>
+    <div class="row"><span class="r-main"><b>정보처리기사</b> — 한국산업인력공단</span><span class="r-sub">2018.11</span></div>
+    <div class="row"><span class="r-main">성균관대 청년창업드림캠프 Global상</span><span class="r-sub">2017.07</span></div>
+    <div class="row"><span class="r-main">아동코딩지도사</span><span class="r-sub">2023.12</span></div>
+  </div>
+  <div>
+    <div class="sec-label">Teaching</div>
+    <div class="row"><span class="r-main"><b>oz코딩스쿨 풀스택 부트캠프 1기·4기 주강사</b> (KDT)</span><span class="r-sub">2025 —</span></div>
+    <div class="row"><span class="r-main">패스트캠퍼스 제로베이스 CS 강의 제작</span><span class="r-sub">2025.03</span></div>
+    <div class="row"><span class="r-main">대구테크노파크 데이터분석·라벨링 직무교육</span><span class="r-sub">2024.11</span></div>
+    <div class="row"><span class="r-main">고용노동부 NCS 확인강사 등록</span><span class="r-sub">2025.06</span></div>
+  </div>
+</div>
+
+<div class="cols sec keep">
+  <div>
+    <div class="sec-label">Education</div>
+    <div class="row"><span class="r-main"><b>성공회대학교</b> 사회복지학과 학사 (졸업)</span><span class="r-sub">2011 — 2015</span></div>
+    <div class="row"><span class="r-main">커널아카데미 AI 부트캠프 13기 (패스트캠퍼스×업스테이지)</span><span class="r-sub">2025</span></div>
+    <div class="row"><span class="r-main">멀티캠퍼스 Java 모바일·웹 개발자 양성과정</span><span class="r-sub">2016 — 2017</span></div>
+  </div>
+  <div>
+    <div class="sec-label">Links</div>
+    <div class="row"><span class="r-main">EzDegree — 학점은행제 플랫폼</span><span class="r-sub">ezdegree.co.kr</span></div>
+    <div class="row"><span class="r-main">모두출판 — 자동조판 소프트웨어</span><span class="r-sub">modupub.com</span></div>
+    <div class="row"><span class="r-main">모두의 자서전 — AI 대필·출판</span><span class="r-sub">bookbyai.com</span></div>
+  </div>
+</div>
+
+</body>
+</html>

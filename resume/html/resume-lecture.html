@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>강사 이력서 - 김태민</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  /* 모든 페이지에 동일하게 적용되는 문서 여백 (상하 20mm · 좌우 20mm) */
+  @page { size: A4; margin: 20mm; }
+  body {
+    font-family: "Apple SD Gothic Neo", "Pretendard", "Noto Sans KR", sans-serif;
+    color: #1c1d21;
+    font-size: 9.8pt;
+    line-height: 1.62;
+    letter-spacing: -0.01em;
+    margin: 0;
+  }
+
+  .header { display: flex; justify-content: space-between; align-items: flex-start; }
+  .header-main { padding-top: 2mm; }
+  .name { font-size: 23pt; font-weight: 800; letter-spacing: -0.03em; }
+  .name small { font-size: 10pt; font-weight: 500; color: #8a8f99; margin-left: 8px; letter-spacing: 0; }
+  .position { font-size: 11pt; font-weight: 700; margin-top: 2mm; }
+  .contact { margin-top: 4mm; font-size: 8.5pt; color: #6f7480; line-height: 1.8; }
+  .contact b { color: #1c1d21; font-weight: 600; }
+  .photo { width: 27mm; height: 36mm; object-fit: cover; border-radius: 2mm; }
+
+  .intro {
+    margin-top: 7mm; padding-top: 5mm; border-top: 1.2pt solid #1c1d21;
+    font-size: 10pt; line-height: 1.7;
+  }
+  .intro p { margin-bottom: 2mm; }
+  .intro .lede { font-weight: 700; font-size: 10.5pt; }
+  .intro .rest { color: #4c4f57; }
+
+  .sec { margin-top: 8mm; }
+  .sec-label {
+    font-size: 8pt; font-weight: 800; letter-spacing: 0.18em; color: #8a8f99;
+    text-transform: uppercase; padding-bottom: 1.5mm; border-bottom: 0.6pt solid #d9d8d3;
+    margin-bottom: 4mm;
+  }
+
+  .item { margin-bottom: 3.5mm; break-inside: avoid; }
+  .item-head { display: flex; justify-content: space-between; align-items: baseline; }
+  .item-head h3 { font-size: 10.5pt; font-weight: 700; letter-spacing: -0.01em; }
+  .item-period { font-size: 8.5pt; font-weight: 600; color: #8a8f99; white-space: nowrap; margin-left: 6mm; }
+  .item-sub { font-size: 8.8pt; color: #6f7480; }
+
+  .skill-row { display: flex; margin-bottom: 1.4mm; }
+  .skill-row span { width: 32mm; flex-shrink: 0; font-size: 8.5pt; font-weight: 700; color: #8a8f99; padding-top: 0.4mm; }
+  .skill-row p { color: #33353b; }
+
+  .row { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 1.6mm; }
+  .row .r-main { color: #33353b; }
+  .row .r-main b { font-weight: 700; color: #1c1d21; }
+  .row .r-sub { font-size: 8.5pt; color: #8a8f99; white-space: nowrap; margin-left: 6mm; }
+
+  .job { margin-bottom: 4mm; break-inside: avoid; }
+  .job-head { display: flex; justify-content: space-between; align-items: baseline; }
+  .job-head h3 { font-size: 10.5pt; font-weight: 800; }
+  .job-head h3 span { font-size: 8.8pt; font-weight: 600; color: #6f7480; margin-left: 6px; }
+  .job p { color: #4c4f57; font-size: 9.3pt; }
+
+  .cols { display: flex; gap: 10mm; }
+  .cols > div { flex: 1; }
+
+  .keep { break-inside: avoid; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-main">
+    <div class="name">김태민 <small>Kim Taemin</small></div>
+    <div class="position">현업의 경험을 그대로 가르치는 IT 실무 강사 · 현직 CTO</div>
+    <div class="contact">
+      <b>010-8331-9717</b> · forest0121@gmail.com<br>
+      github.com/GoodPineApple · goosepeak.kr
+    </div>
+  </div>
+  <img class="photo" src="../../assets/portrait.jpg" alt="">
+</div>
+
+<div class="intro">
+  <p class="lede">서비스를 직접 만들고 운영하는 현직 CTO로서, 실무와 강의를 병행하고 있습니다.</p>
+  <p class="rest">
+    KDT 직업훈련 풀스택 부트캠프 주강사로 6개월 과정을 완주하고 후속 기수를 연속 담당하고 있습니다.<br>
+    공공 SI → 스타트업 CTO → 자체 서비스 개발·운영으로 이어진 9년의 실무 경험을 커리큘럼에 녹입니다.<br>
+    Claude·Codex 등 AI 도구를 활용하는 실무 방식 그대로, 수료 이후 현장에서 통하는 교육을 지향합니다.<br>
+    초등 정규과정부터 성인 부트캠프, 기업 직무교육, 비대면 강의 제작까지 폭넓은 교육 경험을 갖고 있습니다.
+  </p>
+</div>
+
+<div class="sec">
+  <div class="sec-label">Teaching Experience</div>
+
+  <div class="item">
+    <div class="item-head">
+      <h3>oz코딩스쿨 IT스타트업 실무형 풀스택 웹 개발 부트캠프 4기 — 주강사</h3>
+      <span class="item-period">2026.02 — 2026.08 (진행 중)</span>
+    </div>
+    <p class="item-sub">넥스트러너스 · KDT 직업훈련</p>
+  </div>
+
+  <div class="item">
+    <div class="item-head">
+      <h3>oz코딩스쿨 IT스타트업 실무형 풀스택 웹 개발 부트캠프 1기 — 주강사</h3>
+      <span class="item-period">2025.06 — 2025.12</span>
+    </div>
+    <p class="item-sub">넥스트러너스 · 6개월 KDT 과정 완주 (경력증명서 보유: 넥스트러너스 교육5팀)</p>
+  </div>
+
+  <div class="item">
+    <div class="item-head">
+      <h3>패스트캠퍼스 제로베이스 — 컴퓨터사이언스 비대면 강의 제작</h3>
+      <span class="item-period">2025.03</span>
+    </div>
+    <p class="item-sub">CS 기초 온라인 강의 콘텐츠 기획·제작</p>
+  </div>
+
+  <div class="item">
+    <div class="item-head">
+      <h3>oz코딩스쿨 — 웹풀스택 프로젝트 세션 강의</h3>
+      <span class="item-period">2024.12</span>
+    </div>
+    <p class="item-sub">넥스트러너스 · 수강생 프로젝트 멘토링</p>
+  </div>
+
+  <div class="item">
+    <div class="item-head">
+      <h3>대구테크노파크 — 3D Teeth Scan 데이터분석·데이터라벨링 직무교육</h3>
+      <span class="item-period">2024.11</span>
+    </div>
+    <p class="item-sub">기업 재직자 대상 데이터 직무교육</p>
+  </div>
+
+  <div class="item">
+    <div class="item-head">
+      <h3>홍익대학교사범대학부속초등학교 — 정규과정 외부강사</h3>
+      <span class="item-period">2024.01 — 2024.02</span>
+    </div>
+    <p class="item-sub">초등 정규과정 코딩 교육</p>
+  </div>
+</div>
+
+<div class="sec">
+  <div class="sec-label">강의 분야</div>
+  <div class="skill-row"><span>웹 풀스택</span><p>HTML/CSS/JS · TypeScript · React/Next.js · Node.js(Express) · Spring Boot · MySQL/Oracle</p></div>
+  <div class="skill-row"><span>모바일·하이브리드</span><p>Ionic · React Native · 스토어 출시 실무</p></div>
+  <div class="skill-row"><span>AI·데이터</span><p>Python · TensorFlow · 데이터 분석·라벨링 · Claude·Codex 활용 AI 네이티브 개발 워크플로</p></div>
+  <div class="skill-row"><span>컴퓨터 사이언스</span><p>CS 기초 (비대면 강의 콘텐츠 제작 경력)</p></div>
+  <div class="skill-row"><span>실무·창업</span><p>서비스 기획 · MVP 개발 · 프로젝트 관리(PM) · 정부지원사업 R&amp;D</p></div>
+</div>
+
+<div class="sec keep">
+  <div class="sec-label">Industry Experience</div>
+
+  <div class="job">
+    <div class="job-head">
+      <h3>에고라이팅 <span>CTO</span></h3>
+      <span class="item-period">2025.01 — 현재</span>
+    </div>
+    <p>AI 대필 + 출판 원스톱 서비스 모두의 자서전(bookbyai.com), 최초의 다이렉트 출판 플랫폼
+    모두출판(modupub.com) 두 솔루션을 개발·운영.</p>
+  </div>
+
+  <div class="job">
+    <div class="job-head">
+      <h3>구스피크 <span>CTO</span></h3>
+      <span class="item-period">2024.01 — 현재</span>
+    </div>
+    <p>학점은행제 플랫폼 EzDegree(ezdegree.co.kr) 기획·개발·운영.
+    외부 플랫폼 구축 및 AI R&amp;D 기술 고문 수행.</p>
+  </div>
+
+  <div class="job">
+    <div class="job-head">
+      <h3>(주)샤샵 <span>팀장 → CTO</span></h3>
+      <span class="item-period">2019.12 — 2023.12</span>
+    </div>
+    <p>글로벌 상품거래 플랫폼을 4년간 개발·운영. 배송비 예측 AI 모델 개발·적용,
+    2021 대스타 해결사 플랫폼 입상(상금 1억 원) 및 전략형 R&amp;D 수행.</p>
+  </div>
+
+  <div class="job">
+    <div class="job-head">
+      <h3>(주)비타소프트 <span>사원 → 대리 · AI &amp; BigData 사업부</span></h3>
+      <span class="item-period">2017.08 — 2019.11</span>
+    </div>
+    <p>특허청 AI 유사상표 점검 시스템, 대전시 빅데이터 분석 등 공공 SI 백엔드 개발·데이터 분석.</p>
+  </div>
+</div>
+
+<div class="cols sec keep">
+  <div>
+    <div class="sec-label">자격 · 등록</div>
+    <div class="row"><span class="r-main"><b>고용노동부 NCS 확인강사 등록</b></span><span class="r-sub">2025.06</span></div>
+    <div class="row"><span class="r-main"><b>정보처리기사</b> — 한국산업인력공단</span><span class="r-sub">2018.11</span></div>
+    <div class="row"><span class="r-main"><b>GCP Professional Data Engineer</b></span><span class="r-sub">2019.06</span></div>
+    <div class="row"><span class="r-main">아동코딩지도사</span><span class="r-sub">2023.12</span></div>
+    <div class="row"><span class="r-main">HRDI 훈련교·강사 직업윤리 기초교육 이수</span><span class="r-sub">2025.06</span></div>
+    <div class="row"><span class="r-main">개인정보 처리자 기본과정 이수</span><span class="r-sub">2025.06</span></div>
+  </div>
+  <div>
+    <div class="sec-label">학력 · 증빙</div>
+    <div class="row"><span class="r-main"><b>성공회대학교</b> 사회복지학과 학사 (졸업)</span><span class="r-sub">2011 — 2015</span></div>
+    <div class="row"><span class="r-main">강사 경력증명서 (넥스트러너스 발급)</span><span class="r-sub">보유</span></div>
+    <div class="row"><span class="r-main">국가기술자격 취득사항 확인서</span><span class="r-sub">보유</span></div>
+    <div class="row"><span class="r-main">졸업증명서 · 성적증명서</span><span class="r-sub">보유</span></div>
+  </div>
+</div>
+
+</body>
+</html>
