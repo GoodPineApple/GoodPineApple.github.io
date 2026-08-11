@@ -12,12 +12,23 @@ taemin-portfolio/
 ├── styles/story.css        # 슬라이드 스타일
 ├── scripts/main.js         # Lenis + 모바일 네비
 ├── scripts/story.js        # 슬라이드 네비게이션
+├── site.webmanifest        # PWA 매니페스트 (아이콘·테마색)
 ├── assets/
 │   ├── portrait.jpg        # 프로필 사진 (상반신)
 │   ├── id-photo.jpg        # 증명사진 (프로필 PDF에서 추출, 저해상도)
 │   ├── claude.svg          # Claude 아이콘 (Simple Icons, CC0)
 │   ├── openai.svg          # OpenAI 심볼 (Codex 표기용)
-│   └── goosepeak-logo.png  # 구스피크 로고 (goosepeak.kr)
+│   ├── goosepeak-logo.png  # 구스피크 로고 (goosepeak.kr)
+│   ├── og-image.png        # 메인 OG 이미지 (1200x630)
+│   ├── og-story.png        # 스토리 OG 이미지 (1200x630)
+│   ├── favicon.svg         # 파비콘 (SVG)
+│   ├── favicon-32.png      # 파비콘 (32px)
+│   ├── apple-touch-icon.png # 애플 터치 아이콘 (180px)
+│   └── icon-192.png        # 매니페스트 아이콘 (192px)
+├── tools/                  # 이미지 생성 소스 (사이트에 링크되지 않음)
+│   ├── og-main.html        # 메인 OG 이미지 소스
+│   ├── og-story.html       # 스토리 OG 이미지 소스
+│   └── icon.html           # 파비콘·터치 아이콘 소스
 └── resume/
     ├── 이력서_김태민_범용.md    # 이직/채용용 이력서 (원본, 마크다운)
     ├── 이력서_김태민_강사.md    # 강의/강사용 이력서 (원본, 마크다운)
@@ -51,6 +62,27 @@ CHROME="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
   --print-to-pdf="resume/pdf/이력서_김태민_강사.pdf" \
   "file://$PWD/resume/html/resume-lecture.html"
 ```
+
+## OG 이미지 · 아이콘 재생성
+
+`tools/` 아래 HTML을 수정한 뒤 헤드리스 크롬으로 다시 캡처합니다.
+
+```bash
+CHROME="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+"$CHROME" --headless --disable-gpu --hide-scrollbars --window-size=1200,630 \
+  --screenshot="$PWD/assets/og-image.png" "file://$PWD/tools/og-main.html"
+"$CHROME" --headless --disable-gpu --hide-scrollbars --window-size=1200,630 \
+  --screenshot="$PWD/assets/og-story.png" "file://$PWD/tools/og-story.html"
+"$CHROME" --headless --disable-gpu --hide-scrollbars --window-size=180,180 \
+  --screenshot="$PWD/assets/apple-touch-icon.png" "file://$PWD/tools/icon.html"
+sips -z 32 32 assets/apple-touch-icon.png --out assets/favicon-32.png
+sips -z 192 192 assets/apple-touch-icon.png --out assets/icon-192.png
+```
+
+## 글쓰기 규칙
+
+- 본문에 em dash(—)를 쓰지 않습니다. 기간 표기(`2017.08 — 2019.11`)에만 사용합니다.
+- 경력 연차는 2017.08 입사 기준으로 계산합니다. (현재 10년 차)
 
 ## 배포 (GitHub Pages)
 
