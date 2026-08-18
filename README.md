@@ -8,10 +8,13 @@
 taemin-portfolio/
 ├── index.html              # 웹 포트폴리오 (메인 페이지)
 ├── story.html              # AI와 일하는 방식 스토리 슬라이드
+├── teaching.html           # 수강생 히스토리 (사례 캐러셀)
 ├── styles/main.css         # 포트폴리오 스타일
 ├── styles/story.css        # 슬라이드 스타일
+├── styles/teaching.css     # 수강생 히스토리 스타일
 ├── scripts/main.js         # Lenis + 모바일 네비
 ├── scripts/story.js        # 슬라이드 네비게이션
+├── scripts/teaching.js     # 사례 캐러셀
 ├── site.webmanifest        # PWA 매니페스트 (아이콘·테마색)
 ├── assets/
 │   ├── portrait.jpg        # 프로필 사진 (상반신)
@@ -21,10 +24,12 @@ taemin-portfolio/
 │   ├── goosepeak-logo.png  # 구스피크 로고 (goosepeak.kr)
 │   ├── og-image.png        # 메인 OG 이미지 (1200x630)
 │   ├── og-story.png        # 스토리 OG 이미지 (1200x630)
+│   ├── og-teaching.png     # 수강생 히스토리 OG 이미지 (1200x630)
 │   ├── favicon.svg         # 파비콘 (SVG)
 │   ├── favicon-32.png      # 파비콘 (32px)
 │   ├── apple-touch-icon.png # 애플 터치 아이콘 (180px)
-│   └── icon-192.png        # 매니페스트 아이콘 (192px)
+│   ├── icon-192.png        # 매니페스트 아이콘 (192px)
+│   └── students/           # 수강생 서비스 화면 캡처 (teaching.html 갤러리)
 ├── tools/                  # 이미지 생성 소스 (사이트에 링크되지 않음)
 │   ├── og-main.html        # 메인 OG 이미지 소스
 │   ├── og-story.html       # 스토리 OG 이미지 소스
@@ -33,6 +38,7 @@ taemin-portfolio/
     ├── 이력서_김태민_범용.md    # 이직/채용용 이력서 (원본, 마크다운)
     ├── 이력서_김태민_강사.md    # 강의/강사용 이력서 (원본, 마크다운)
     ├── 강사소개글.md             # 강의 플랫폼 프로필용 자기소개 원문
+    ├── 수강생사례_입력양식.md    # teaching.html 사례 작성용 양식
     ├── html/
     │   ├── resume-general.html  # 범용 이력서 인쇄용 (PDF 변환 소스)
     │   └── resume-lecture.html  # 강사용 이력서 인쇄용 (PDF 변환 소스)
